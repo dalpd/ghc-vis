@@ -39,6 +39,11 @@ flag full
 custom-setup
   setup-depends: base  >= 4, Cabal >= 1.24, filepath
 
+Executable ghc-vis-nix
+  Main-is: Main.hs
+  Hs-source-dirs: app
+  Build-depends: base >= 4.5 && < 5
+
 Library
   Exposed-modules: GHC.Vis
   Autogen-Modules: Paths_ghc_vis
